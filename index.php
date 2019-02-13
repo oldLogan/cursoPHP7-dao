@@ -29,8 +29,19 @@ $aluno->insert();
 echo $aluno;
  */
 //Update de usuario
+/*
 $usuario = new Usuario();
 $usuario->loadById(10);
 $usuario->update("STEVE ROGERS", "V1br4n1um");
+echo $usuario;*/
+
+
+//Excluindo usuario
+
+$usuario = new Usuario();
+$usuario->loadById(12);
+$usuario->delete();
 echo $usuario;
+
+
 ?>
