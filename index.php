@@ -16,9 +16,21 @@ echo json_encode($lista);*/
 echo json_encode($search);*/
 
 //Carrega um usuario usando o login e a senha
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->login("root","@#$$");
+echo $usuario;*/
+
+
+//Criando um novo usuario
+/*$aluno = new Usuario("Bruce Banner", "GAMAGAMA");
+
+$aluno->insert();
+
+echo $aluno;
+ */
+//Update de usuario
+$usuario = new Usuario();
+$usuario->loadById(10);
+$usuario->update("STEVE ROGERS", "V1br4n1um");
 echo $usuario;
-
-
 ?>
